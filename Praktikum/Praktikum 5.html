@@ -1,0 +1,80 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 5</title>
+</head>
+
+<body>
+    <h1>Belajar JavaScript Dasar</h1>
+
+    <button onclick="alert('Saya sedang belajar bahasa pemrograman Javascript')">Klik Saya</button> -->
+<!-- <script>
+        alert("Halo ini merupakan alert yang saya buat dengan javascript");
+    </script> -->
+<!-- <script src="main.js"></script> -->
+
+<!-- <h1 id="judul">Selamat Datang</h1>
+    <button onclick="ubahTeks()">Ubah Teks</button>
+
+    <script>
+        function ubahTeks() {
+            document.getElementById("judul").innerHTML = "Teks telah berubah!";
+        }
+    </script> -->
+
+<!-- <script src="main.js"></script>
+</body>
+
+</html> -->
+
+<html>
+
+<head>
+    <title>Kalkulator Sederhana</title>
+</head>
+
+<body>
+    <h2>Kalkulator</h2>
+    <input type="number" id="num1">
+    <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <input type="number" id="num2">
+    <button onclick="hitung()">Hitung</button>
+    <p>Hasil: <span id="hasil"></span></p>
+    <script>
+        function hitung() {
+            let num1 = parseFloat(document.getElementById("num1").value);
+            let num2 = parseFloat(document.getElementById("num2").value);
+            let operator = document.getElementById("operator").value;
+            let hasil;
+
+            switch (operator) {
+                case "+":
+                    hasil = num1 + num2;
+                    break;
+                case "-":
+                    hasil = num1 - num2;
+                    break;
+                case "*":
+                    hasil = num1 * num2;
+                    break;
+                case "/":
+                    hasil = num2 !== 0 ? num1 / num2 : "Tidak bisa dibagi oleh 0";
+                    break;
+                default:
+                    hasil = "Operator tidak valid";
+            }
+
+            document.getElementById("hasil").innerText = hasil;
+        }
+    </script>
+</body>
+
+</html>
