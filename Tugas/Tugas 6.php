@@ -1,29 +1,21 @@
 <?php
-// Konstanta pajak
 define("PAJAK", 0.10);
 
-// Array harga barang
 $barang = array(
     "Keyboard" => 150000
 );
 
-// Jumlah beli
 $jumlahBeli = 2;
 
-// Ambil harga satuan
 $namaBarang = "Keyboard";
 $hargaSatuan = $barang[$namaBarang];
 
-// Hitung total sebelum pajak
 $totalSebelumPajak = $hargaSatuan * $jumlahBeli;
 
-// Hitung pajak
 $pajak = $totalSebelumPajak * PAJAK;
 
-// Hitung total bayar
 $totalBayar = $totalSebelumPajak + $pajak;
 
-// Output dengan style tambahan (background hijau dan font lebih besar)
 echo "<div style='border:1px solid black; 
     padding:20px; 
     width:fit-content; 
