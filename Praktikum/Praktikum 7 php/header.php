@@ -1,3 +1,4 @@
+<?php
 <html>
    <body>
        <div class="menu">
@@ -5,3 +6,5 @@
        </div>
    </body>
 </html>
+
+?>
